@@ -50,6 +50,6 @@ http://127.0.0.1:8080/gofetch-railways/api/
 TODO List:
 
 Admin functionality is not finished and may be not working properly - API and JS will be reviewed and completed
-Enhance and clean up web UI - very ugly and messy at the moment
+Enhance and clean up web UI - it is very simple and has some bugs at the moment
 Review logging and exception handling
 Seems to be an issue with circle route - need to test properly
