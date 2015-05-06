@@ -1,0 +1,14 @@
+{
+"stations":[
+    {"id":"A", "x": 200 , "y" : 160, "routes": [{"toStation": {"id" : "B"} , "distance" : 12}, {"toStation": { "id" : "D"}, "distance" : 19}, {"toStation": {"id" : "E"}, "distance" : 20}, {"toStation": {"id" : "G"}, "distance" : 16}] },
+    {"id":"B", "x": 360 , "y" : 240, "routes": [{"toStation": {"id" : "C"}, "distance" : 5}, {"toStation": {"id" : "D"}, "distance" : 13}, {"toStation": {"id" :"I"}, "distance" : 15}] },
+    {"id":"C", "x": 560 , "y" : 180, "routes": [{"toStation": {"id" : "D"}, "distance" : 5}] },
+    {"id":"D", "x": 400 , "y" : 100, "routes": [{"toStation": {"id" : "E"}, "distance" : 7}] },
+    {"id":"E", "x": 280 , "y" : 40, "routes": [{"toStation": {"id" : "F"}, "distance" : 5}] },
+    {"id":"F", "x": 80 , "y" : 80, "routes": [{"toStation": {"id" : "A"}, "distance" : 5}] },
+    {"id":"G", "x": 80 , "y" : 240, "routes": [{"toStation": {"id" : "F"}, "distance" : 11}] },
+    {"id":"H", "x": 200 , "y" : 320, "routes": [{"toStation": {"id" : "A"}, "distance" : 4}, {"toStation": {"id" : "G"}, "distance" : 6}] },
+    {"id":"I", "x": 360 , "y" : 400, "routes": [{"toStation": {"id" : "H"}, "distance" : 21}, {"toStation": {"id" : "J"}, "distance" : 10}] },
+    {"id":"J", "x": 480 , "y" : 320, "routes": [{"toStation": {"id" : "B"}, "distance" : 7}, {"toStation": {"id" :"C"}, "distance" : 15}] }
+]
+}

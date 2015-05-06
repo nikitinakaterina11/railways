@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>GoFetch Railway System</title>
+<link rel="stylesheet" href="/gofetch-railways/css/app.css">
+</head>
+
+<body>
+	<h1>GoFetch Railways</h1>
+	<hr>
+	<br>
+	<div id="graph"></div>
+	<div class="input-block">
+		<div>Select railway stations:</div>
+		<br />
+		<div id="current-selection"></div>
+		<br /> <input type="button" id="cd"
+			value="Calculate Distance" onmousedown="calculateDistance()" /> <br />
+			
+		<br /> 
+		Enter number of stops (optional):
+		<input type="text" id="jpStops" /> 
+		<select id="jpExact">
+		    <option value=""></option>
+			<option value="true">=</option>
+			<option value="false"><=</option>
+		</select> 
+		<br/> 
+		<br/> 
+		<input type="button" value="Journey Options"
+			onmousedown="journeyOptions()" /> <br /> <br /> 
+			<input
+			type="button" value="Shortest Route"
+			onmousedown="shortestRoute()" /> <br /> <br />
+			 <input type="button"
+			onmousedown="clearSelection()"
+			value="Clear Selection" />
+	</div>
+	<span class="result-block"> Result: 	</span>
+	<p id="result"></p>
+</body>
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="/gofetch-railways/js/app.js"></script>
+</html>

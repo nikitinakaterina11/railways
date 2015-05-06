@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>GoFetch Railway System</title>
+<link rel="stylesheet" href="/gofetch-railways/css/app.css">
+</head>
+
+<body>
+	<h1>GoFetch Railways</h1>
+	<hr>
+	<br>
+	<div id="graph"></div>
+	<span class="input-block">
+		<span class="bold">Add station:</span>
+		<br />
+		Station id: <br/><input type="text" id="stationAdd" />
+		<br/>
+		X: <br/><input type="text" id="stationAddX" /> 
+		<br/>
+		Y: <br/><input type="text" id="stationAddY" />
+		<br /> <input type="button" 
+			value="Submit" onmousedown="addStation()" /> 
+			
+	    <br/>			
+		<span class="bold">Remove station (only this works :):</span>
+		<br />
+		Station id: <br/><input type="text" id="stationRemove" /> 
+		<br /> <input type="button" 
+			value="Submit" onmousedown="removeStation()" /> <br />
+	</span>
+	<span class="input-block">
+		<span class="bold">Add route:</span>
+		<br />
+		From station: <br/><input type="text" id="linkAddFrom" /> 
+		<br/>
+		To station: <br/><input type="text" id="linkAddTo" />
+		<br/>
+		Distance: <br/> <input type="text" id="linkAddDistance" /> 
+		<br /> <input type="button" 
+			value="Submit" onmousedown="addLink()" /> 
+			
+	    <br/>			
+		<br/> 
+		<span class="bold">Remove route:</span>
+		<br />
+		From station: <br/><input type="text" id="linkRemoveFrom" /> 
+		<br/>
+		To station: <br/><input type="text" id="linkRemoveTo" />
+		<br /> <input type="button" 
+			value="Submit" onmousedown="removeLink()" />
+			
+	</span>
+</body>
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="/gofetch-railways/js/app.js"></script>
+</html>
