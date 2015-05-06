@@ -58,11 +58,11 @@ public class JourneyOptionsPlanner {
 		DataValidator.validateCriteria(start, end);
 		DataValidator.validateCriteriaStops(stops);
 
-		// find options using Breadth First Search algorithm
+		// find options using Depth First Search algorithm
 		JourneyOptions journeys = new JourneyOptions();
 		LinkedList<Station> visited = new LinkedList<Station>();
 		visited.add(railway.getStation(start));
-		journeys = breadthFirstAlg(railway, visited, end, journeys);
+		journeys = depthFirstAlg(railway, visited, end, journeys);
 
 		// filter out journeys that do match a maximum number of stops
 		// conditions
@@ -70,9 +70,9 @@ public class JourneyOptionsPlanner {
 	}
 
 	/**
-	 * Breadth First Search algorithm implementation using recursion
+	 * Depth First Search algorithm implementation using recursion
 	 * 
-	 * @param raiway
+	 * @param railway
 	 *            configuration
 	 * @param visited
 	 *            - list of visited stations
@@ -83,7 +83,7 @@ public class JourneyOptionsPlanner {
 	 *            are found
 	 * @return journey options - list of route options between start and end
 	 */
-	private static JourneyOptions breadthFirstAlg(Railway railway,
+	private static JourneyOptions depthFirstAlg(Railway railway,
 			LinkedList<Station> visited, String end, JourneyOptions journeys) {
 
 		// get last station from visited list and examine its links
@@ -116,7 +116,7 @@ public class JourneyOptionsPlanner {
 				// add adjacent station to visited
 				visited.addLast(railway.getStation(station.getId()));
 				// execute algorithm for adjacent station
-				breadthFirstAlg(railway, visited, end, journeys);
+				depthFirstAlg(railway, visited, end, journeys);
 				visited.removeLast();
 			}
 		}

@@ -77,7 +77,7 @@ public class ShortestRouteCalculator {
 	/**
 	 * adds a dummy station to the railway
 	 * 
-	 * @param raiway
+	 * @param railway
 	 *            configuration
 	 * @param dummyStation
 	 *            - dummyStation to be added
@@ -106,7 +106,7 @@ public class ShortestRouteCalculator {
 	/**
 	 * removes a dummy station from the railway
 	 * 
-	 * @param raiway
+	 * @param railway
 	 *            configuration
 	 * @param dummyStation
 	 *            - dummyStation to be added
@@ -127,7 +127,7 @@ public class ShortestRouteCalculator {
 	/**
 	 * creates a journey based on Dijkstra calculations
 	 * 
-	 * @param raiway
+	 * @param railway
 	 *            configuration
 	 * @param start
 	 *            station
@@ -167,7 +167,7 @@ public class ShortestRouteCalculator {
 	/**
 	 * implementation of Dijkstra's algorithm
 	 * 
-	 * @param raiway
+	 * @param railway
 	 *            configuration
 	 * @param start
 	 *            station
